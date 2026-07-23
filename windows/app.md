@@ -35,7 +35,7 @@ ____________________________
 
 
 Unfortunately, the pdf has some errors, that can be highlighted
-with Acrobat Acrobat
+with Acrobat Acrobat (disable wifi access)
 
 <table>
 <tbody>

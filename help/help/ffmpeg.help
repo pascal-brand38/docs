@@ -7,3 +7,9 @@ for file in *.avi */*.avi; do
   echo Processing "$file" to "$target"
   ffmpeg -loglevel quiet -fflags +genpts -i "$file" -c:v copy -c:a copy "$target"
 done
+
+## copy with forcing 4:3 format
+for file in org/*; do
+  target=`basename $file`
+  ffmpeg -i org/"$target" -c copy -aspect 4:3 "$target"
+done
